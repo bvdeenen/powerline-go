@@ -7,7 +7,7 @@ import (
 )
 
 func segmentDotEnv(p *powerline) []pwl.Segment {
-	files := []string{".env", ".envrc"}
+	files := []string{".env"}
 	dotEnv := false
 	for _, file := range files {
 		stat, err := os.Stat(file)
