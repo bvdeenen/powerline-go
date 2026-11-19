@@ -2,27 +2,26 @@ package main
 
 import (
 	"os"
-	"path/filepath"
-	"strings"
 
 	pwl "github.com/justjanne/powerline-go/powerline"
 )
 
+// segmentDirenv shows the direnv state: the contents of DIRENV_MESG when set,
+// otherwise a "Δ" marker when a direnv environment is loaded (DIRENV_DIR set).
 func segmentDirenv(p *powerline) []pwl.Segment {
-	content := os.Getenv("DIRENV_DIR")
-	if content == "" {
-		return []pwl.Segment{}
-	}
-	if strings.TrimPrefix(content, "-") == p.userInfo.HomeDir {
-		content = "~"
+	var content string
+	if mesg := os.Getenv("DIRENV_MESG"); mesg != "" {
+		content = "⊂" + mesg + "⊃"
+	} else if os.Getenv("DIRENV_DIR") != "" {
+		content = "Δ"
 	} else {
-		content = filepath.Base(content)
+		return []pwl.Segment{}
 	}
 
 	return []pwl.Segment{{
 		Name:       "direnv",
 		Content:    content,
-		Foreground: p.theme.DotEnvFg,
-		Background: p.theme.DotEnvBg,
+		Foreground: p.theme.DirenvFg,
+		Background: p.theme.DirenvBg,
 	}}
 }

@@ -205,8 +205,15 @@ var defaults = Config{
 			WSLMachineFg: 250, // light grey
 			WSLMachineBg: 238, // dark grey
 
-			DotEnvFg: 15, // white
-			DotEnvBg: 55, // purple
+			DotEnvFg:      15,  // white
+			DotEnvBg:      55,  // purple
+			DirenvFg:      16,  // black
+			DirenvBg:      46,  // green
+			JdkFg:         15,  // white
+			JdkBg:         172, // orange
+			PythonFg:      7,   // light grey
+			PythonBg:      240, // dark grey
+			PythonLocalBg: 236, // darker grey (python3 from ~/.local/bin)
 
 			AzureFg: 15, // white
 			AzureBg: 26, // Azure blue
@@ -596,8 +603,15 @@ var defaults = Config{
 			KubeNamespaceFg: 170,
 			KubeNamespaceBg: 17,
 
-			DotEnvFg: 15, // white
-			DotEnvBg: 55, // purple
+			DotEnvFg:      15,  // white
+			DotEnvBg:      55,  // purple
+			DirenvFg:      16,  // black
+			DirenvBg:      46,  // green
+			JdkFg:         15,  // white
+			JdkBg:         172, // orange
+			PythonFg:      7,   // light grey
+			PythonBg:      240, // dark grey
+			PythonLocalBg: 236, // darker grey (python3 from ~/.local/bin)
 
 			RepoCleanFg: 232, // black
 			RepoCleanBg: 230, // light yellow
@@ -951,6 +965,13 @@ var defaults = Config{
 			DockerMachineBg:    55,
 			DotEnvFg:           15,
 			DotEnvBg:           55,
+			DirenvFg:           16,  // black
+			DirenvBg:           46,  // green
+			JdkFg:              15,  // white
+			JdkBg:              172, // orange
+			PythonFg:           7,   // light grey
+			PythonBg:           240, // dark grey
+			PythonLocalBg:      236, // darker grey (python3 from ~/.local/bin)
 			RepoCleanFg:        15,
 			RepoCleanBg:        3,
 			RepoDirtyFg:        15,
@@ -1292,6 +1313,13 @@ var defaults = Config{
 			DockerMachineBg:    55,
 			DotEnvFg:           15,
 			DotEnvBg:           55,
+			DirenvFg:           16,  // black
+			DirenvBg:           46,  // green
+			JdkFg:              15,  // white
+			JdkBg:              172, // orange
+			PythonFg:           7,   // light grey
+			PythonBg:           240, // dark grey
+			PythonLocalBg:      236, // darker grey (python3 from ~/.local/bin)
 			RepoCleanFg:        15,
 			RepoCleanBg:        3,
 			RepoDirtyFg:        15,
@@ -1634,6 +1662,13 @@ var defaults = Config{
 			DockerMachineBg:    gruvbox_faded_purple, // match ssh-bg
 			DotEnvFg:           gruvbox_light0,       // match ssh-fg
 			DotEnvBg:           gruvbox_faded_purple, // match ssh-bg
+			DirenvFg:           16,                   // black
+			DirenvBg:           46,                   // green
+			JdkFg:              15,                   // white
+			JdkBg:              172,                  // orange
+			PythonFg:           7,                    // light grey
+			PythonBg:           240,                  // dark grey
+			PythonLocalBg:      236,                  // darker grey (python3 from ~/.local/bin)
 			RepoCleanFg:        gruvbox_dark1,
 			RepoCleanBg:        gruvbox_faded_green,
 			RepoDirtyFg:        gruvbox_light0,

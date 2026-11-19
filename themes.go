@@ -78,6 +78,16 @@ type Theme struct {
 	DotEnvFg uint8
 	DotEnvBg uint8
 
+	DirenvFg uint8
+	DirenvBg uint8
+
+	JdkFg uint8
+	JdkBg uint8
+
+	PythonFg      uint8
+	PythonBg      uint8
+	PythonLocalBg uint8
+
 	AzureFg uint8
 	AzureBg uint8
 
