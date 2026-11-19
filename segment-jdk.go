@@ -5,7 +5,7 @@ import (
 	"path/filepath"
 	"strings"
 
-	pwl "github.com/justjanne/powerline-go/powerline"
+	pwl "github.com/bvdeenen/powerline-go/powerline"
 )
 
 // segmentJdk shows the JDK selected by JAVA_HOME. When JAVA_HOME is a

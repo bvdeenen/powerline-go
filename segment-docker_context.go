@@ -5,7 +5,7 @@ import (
 	"os"
 	"path/filepath"
 
-	pwl "github.com/justjanne/powerline-go/powerline"
+	pwl "github.com/bvdeenen/powerline-go/powerline"
 )
 
 type DockerContextConfig struct {

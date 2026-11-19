@@ -7,7 +7,7 @@ import (
 	"os/exec"
 	"strings"
 
-	pwl "github.com/justjanne/powerline-go/powerline"
+	pwl "github.com/bvdeenen/powerline-go/powerline"
 )
 
 const pkgfile = "./package.json"

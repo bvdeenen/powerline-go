@@ -3,7 +3,7 @@ package main
 import (
 	"os"
 
-	pwl "github.com/justjanne/powerline-go/powerline"
+	pwl "github.com/bvdeenen/powerline-go/powerline"
 )
 
 // segmentDirenv shows the direnv state: the contents of DIRENV_MESG when set,
