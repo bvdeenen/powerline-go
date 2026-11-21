@@ -11,7 +11,7 @@ import (
 func segmentDirenv(p *powerline) []pwl.Segment {
 	var content string
 	if mesg := os.Getenv("DIRENV_MESG"); mesg != "" {
-		content = "⊂" + mesg + "⊃"
+		content = mesg
 	} else if os.Getenv("DIRENV_DIR") != "" {
 		content = "Δ"
 	} else {
